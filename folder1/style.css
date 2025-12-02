@@ -1,0 +1,58 @@
+/* h1 {
+  background-color: aqua;
+  border: 10px solid;
+}
+.cls {
+  color: brown;
+}
+#a {
+  color: red;
+  background-color: bisque;
+}
+/* groop selector comma */
+h1,h2{
+    color:rgb(3, 3, 3); 
+}
+/* descendant selector*/
+div p{
+    color:red;
+    background-color: antiquewhite;
+}
+/*child selector*/
+div > p{
+    color: aqua;
+    background-color: blueviolet;
+}
+/* attribute selctor*/
+button[type="submit"]{
+    color: brown;
+    font-size:32px;;
+} */
+/* psuedo class in a list for selecting are making only 2 ns element in different color*/
+li:nth-child(2)
+{
+ color: red;
+ font-size: 24px;   
+}
+li:hover{
+    color:blueviolet;
+    background-color: aqua;
+    font-size: 30px;
+}
+/* psuedo elements*/
+#r::before{
+    content: "Written by css ";
+}
+.b::first-letter{
+    font-size: 40px;
+    color: red;
+}
+#q{
+    display:block;
+}
+h1:nth-child(1)
+{
+ border: 3px solid red;
+ padding: 10px;
+ 
+}
