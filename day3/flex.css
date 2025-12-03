@@ -1,0 +1,30 @@
+.flexcontainer{
+    border: 1px solid red;
+    display: flex;
+    height: 9vh;
+    /* flex-direction: column-reverse;
+    justify-content: flex-end; */
+    /* align-items: center; */
+    flex-wrap: wrap-reverse;
+    align-content: center;
+}
+.flexitem{
+    background-color: aqua;
+    color: blueviolet;
+    border: 2px solid black;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+}
+/* to place the item at the end we have to use greater value from 0 
+to put it at starting we need a negative value  */
+/* default order of every elemnt is 0 */
+.flexitem:nth-child(1){
+    order:1;
+    align-self: center;
+}
+.flexitem:nth-child(6)
+{
+    order:-1;
+    align-self: center;
+}

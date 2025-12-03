@@ -1,0 +1,36 @@
+header{
+    background-color: rgb(82, 6, 245);
+    height:75px;
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: aliceblue;
+}
+.sidebar{
+    background-color: black;
+    color: white;
+   min-height: 100vh;
+    width:220px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.container{
+    display:flex;
+}
+.sidebar ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+.state{
+  display: flex;
+  gap:15px;
+}
+.statebox{
+    padding: 15px;
+    flex: 1;
+    border-radius: 8px;
+    text-align: center;
+}
