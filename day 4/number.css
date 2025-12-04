@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+   color:white;
+}
+btn again{
+    border:1px solid white;
+    /* background-color: rgba(255, 255, 255, 0.868); */
+    height: 30px;
+    width:60px;
+    display:flex;
+    color: black;
+   
+    align-items: flex-start;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* .number{
+    display:flex;
+    flex-direction: row;
+    align-content: flex-end;
+    color: rgba(255, 255, 255, 0.868);
+}
+.number:nth-child(1){
+    order:-1;
+}
+.number:nth-child(2){
+    order:1;
+} */
+ h1{
+    flex-wrap: wrap;
+    text-align: center;
+    align-self: center;
+ }
