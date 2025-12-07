@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.js">
+    <style>
+       form{
+        background-color: rgb(194, 198, 198);
+        margin-left:500px;
+        margin-top: 100px;
+        height:250px;
+        width:300px;
+        padding:20px;
+        border-radius: 10px;
+        box-shadow: 1px;
+       }
+       h2{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+   
+
+
+    <form id="feedbackForm">
+        <h2>Student Feedback Form</h2>
+      <input type="text" id="name" placeholder="Enter your name" required /><br><br>
+
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option>HTML & CSS</option>
+        <option>JavaScript</option>
+        <option>React JS</option>
+        <option>Node JS</option>
+      </select><br><br>
+
+      <label>Rating (1 to 5):</label>
+      <input type="range" id="rating" min="1" max="5" value="3" /><br><br>
+
+      <textarea
+        id="feedback"
+        placeholder="Write your feedback..."
+        required
+      ></textarea><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div id="output"></div>
+</body>
+</html>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <script src="dom.js" async></script> <!--// using async defer the html page will load -->
-     <!-- load js file after completely loading the html file -->
-      <style>
-        .border{
+    <script src="dom.js" async></script>
+    <!--// using async defer the html page will load -->
+    <!-- load js file after completely loading the html file -->
+    <style>
+      /* .border{
             border: 2px solid red;
         }
         .color{
@@ -15,8 +16,28 @@
         }
         .background{
             background-color: yellow;
-        }
-      </style>
+        } */
+    </style>
+    <style>
+      body {
+        height: 100px;
+        display: flex;
+        padding-top: 20px;
+        background-color: lightcyan;
+        justify-content: center;
+      }
+      form {
+        width: 300px;
+        height: 120px;
+        background-color: lightgray;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        flex-direction: column;
+        border-radius: 8px;
+      }
+    </style>
   </head>
   <body>
     <!-- <h1>tag selector</h1>
@@ -33,13 +54,20 @@
      </div> -->
     <!-- <script src="dom.js"></script> -->
 
-    <div class="border">
+    <!-- <div class="border">
         <h1>tag selector2</h1>
         <p >Id selector</p>
     </div>
     <div class="color">
 
     </div>
-    <div class="background"></div>
+    <div class="background"></div> -->
+
+    <form id="as">
+      <input type="text" class="a" placeholder="name" />
+      <input type="text" class="b" placeholder="feedback" />
+      <button type="submit">submit</button>
+    </form>
+    <div id="result"></div>
   </body>
 </html>
