@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.js">
     <style>
        form{
         background-color: rgb(194, 198, 198);
@@ -18,6 +17,22 @@
        }
        h2{
         text-align: center;
+       }
+       #outputContainer {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* so boxes go to next row if needed */
+}
+       #output{
+        display: none;
+        background-color: rgb(72, 252, 177);
+        border: 1px solid rgb(5, 247, 146);
+        padding:25px;
+        /* text-align: center; */
+        box-shadow: 10px;
+       white-space: pre-line;
+        width:150px;
+        height:100px;
        }
     </style>
 </head>
@@ -48,7 +63,9 @@
 
       <button type="submit">Submit Feedback</button>
     </form>
-
+<div class="outputContainer">
     <div id="output"></div>
+    </div>
+    <script src="form.js"></script>
 </body>
 </html>
